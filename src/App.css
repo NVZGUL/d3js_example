@@ -1,0 +1,51 @@
+.wrapper{
+	position: relative;
+	display: flex;
+  margin: auto;
+  width: 100%;
+}
+.charter_container{
+	width: 100%;
+}
+.charts{
+	height: 768px;
+	margin: 20px;
+	border: 1px solid;
+}
+.data{
+	padding: 20px;
+	margin: 20px 20px 20px 10px;
+  width: 300px;
+  border: 1px solid;
+}
+.data_list{
+	list-style: none;
+	padding: 0;
+}
+.data_list li{
+	border: 1px solid;
+	padding: 2px;
+	margin-top: 5px;
+}
+.data_list li span{
+	font-weight: bold;
+}
+.btn{
+	float: right;
+}
+.btn_hide{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 40%;
+}
+.btn_left{
+	left: 0;
+}
+.btn_right{
+	right: 0;
+}
+.d3_chart{
+	width: 400px;
+	height: 400px;
+}
