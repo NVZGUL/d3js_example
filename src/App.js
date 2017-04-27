@@ -8,7 +8,6 @@ class App extends Component {
 
     this.state = {
       str: '',
-      list: {},
       data: []
     }
   }
@@ -16,10 +15,7 @@ class App extends Component {
   handleSubmit = (event) => {
     let date = new Date()
     let current_date = date.getMinutes() + ':' + date.getSeconds() + ':' + date.getMilliseconds()
-    let toAdd = {}
-    toAdd[current_date] = this.state.str
     this.setState({
-      list: Object.assign({}, this.state.list, toAdd),
       str: '',
       data: this.state.data.concat({name: current_date, uv: parseInt(this.state.str)})
     });
@@ -41,8 +37,6 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <button className="btn_hide btn_left"></button>
-        <button className="btn_hide btn_right"></button>
         <div className="charter_container">
           <div className="charts">
             <LineChart width={400} height={400} data={this.state.data}>
